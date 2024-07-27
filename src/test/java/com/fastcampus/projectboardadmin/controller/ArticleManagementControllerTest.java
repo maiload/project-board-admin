@@ -31,7 +31,7 @@ class ArticleManagementControllerTest {
         // Given
 
         // When & Then
-        mvc.perform(get("//management/articles"))
+        mvc.perform(get("/management/articles"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(view().name("management/articles"));
