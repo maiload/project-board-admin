@@ -134,7 +134,7 @@ class ArticleManagementServiceTest {
 
         @DisplayName("게시글 ID와 함께 게시글 삭제 API을 호출하면, 게시글을 삭제한다.")
         @Test
-        void givenArticleId_whenCallingDeleteArticleApi_thenDeletesArticle() throws Exception {
+        void givenArticleId_whenCallingDeleteArticleApi_thenDeleteAnArticle() throws Exception {
             // Given
             Long articleId = 1L;
             server
